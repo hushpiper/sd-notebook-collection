@@ -3,6 +3,10 @@ All-in-One, Customizable and Flexible AUTOMATIC1111's Stable Diffusion Web UI fo
  
 ## What's New?
 
+### v.4.0.0 (12/26/23)
+
+Creating updated, renamed fork.
+
 ### v.3.0.0 (10/06/23)
 - Rewrote `cagliostro-colab-ui` codebase from scratch.
   - Used in-house module [Colablib](https://github.com/Linaqruf/colablib) as the primary library for go-to functions, such as colored print, git function, download syntax, etc.

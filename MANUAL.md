@@ -1,11 +1,11 @@
-# Cagliostro Colab UI User Manual
+# HP Colab UI User Manual
 
-Welcome to the [Cagliostro Colab UI](https://colab.research.google.com/github/Linaqruf/sd-notebook-collection/blob/main/cagliostro-colab-ui.ipynb) User Manual! This guide will walk you through the basics of using Cagliostro Colab UI, an innovative and powerful notebook designed to launch [Automatic1111's Stable Diffusion Web UI](https://github.com/AUTOMATIC1111/stable-diffusion-webui/) in Google Colab. With its advanced features, customizability, and flexibility, Cagliostro Colab offers a seamless and efficient way to utilize Stable Diffusion Web UI for your projects.
+Welcome to the [HP Colab UI](https://colab.research.google.com/github/Linaqruf/sd-notebook-collection/blob/main/cagliostro-colab-ui.ipynb) User Manual! This guide will walk you through the basics of using HP Colab UI, an innovative and powerful notebook designed to launch [Automatic1111's Stable Diffusion Web UI](https://github.com/AUTOMATIC1111/stable-diffusion-webui/) in Google Colab. With its advanced features, customizability, and flexibility, HP Colab offers a seamless and efficient way to utilize Stable Diffusion Web UI for your projects.
 
-To get started with Cagliostro Colab UI, you'll need to have a Google account. Once you're logged in, you can open up Google Colab by visiting the website and signing in with your Google credentials.
+To get started with HP Colab UI, you'll need to have a Google account. Once you're logged in, you can open up Google Colab by visiting the website and signing in with your Google credentials.
 
 ## Table of Contents
-- [Cagliostro Colab UI User Manual](#cagliostro-colab-ui-user-manual)
+- [HP Colab UI User Manual](MANUAL.md)
 - [Table of Contents](#table-of-contents)
 - [Features](#features)
 - [Main Cell Explained](#main-cell-explained)
@@ -46,7 +46,7 @@ Options                                | Default Value         | Description
 Drive Config                           |                       | 
 `mount_drive`                          | `False`               | Mount your Google Drive to `/content/drive/MyDrive/` to load models.
 `output_to_drive`                      | `False`               | Save generation outputs to your Google Drive instead of `/content/stable-diffusion-webui/outputs`.
-`output_drive_folder`                  | `False`               | Set your default drive folder name to save your generation outputs, default: `cagliostro-colab-ui/outputs`
+`output_drive_folder`                  | `False`               | Set your default drive folder name to save your generation outputs, default: `hp-colab-ui/outputs`
 Web UI Config                          |                       | 
 `use_anapnoe_ui`                       | `True`                | Use Anapnoe's forked repository instead of Automatic1111's.
 `update_webui`                         | `True`                | Update the web UI to the latest version. Because we're using pre-installed repo, this option is crucial if you want to try latest update.
@@ -126,7 +126,7 @@ Option          | Default  | Description
 `ngrok_region`   | `ap`     | Specify the desired region for ngrok tunnel. Users can choose between `["us", "eu", "au", "ap", "sa", "jp", "in"]`.
 | Launch Arguments |  |  |
 | `theme_selector` | `ogxBGreen` | This section used to change preferred theme for [Anapnoe's Stable Diffusion Web UI/UX](https://github.com/anapnoe/stable-diffusion-webui-ux) |
-| `use_gradio_auth` | `False` | If enabled, every time a user opens shared links, it will ask for authentication. The username is set to `cagliostro` and the password will be randomly generated with 6 ASCII characters and numbers. Authentication information will be printed when the user launches the Web UI. |
+| `use_gradio_auth` | `False` | If enabled, every time a user opens shared links, it will ask for authentication. The username is set to `hp` and the password will be randomly generated with 6 ASCII characters and numbers. Authentication information will be printed when the user launches the Web UI. |
 | `accelerator` | `xformers` | To accelerate your generation and training, we offer 3 arguments. People commonly use `xformers`, but `opt-sdp-attention` would be a nice choice to have after Colab updates PyTorch to 2.0. It's claimed to be better than `xformers` but only for generating at lower resolution. So we choose to use `xformers` by default. |
 | `quiet_mode` | `True` | This is a quality-of-life option. If enabled, it will use `--no-hashing` to skip model hashing, which is useful for not double-checking the model if it doesn't have the same hash and for merging the model. If enabled, it will also use `--disable-console-progressbars` to only have 1 line progress bars instead of updating new lines every generation. |
 | `auto_select_model` | `False` | This argument allows searching for a model and randomly selecting the model in the model directory. |
